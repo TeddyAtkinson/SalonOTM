@@ -15,7 +15,7 @@ namespace Salon.Controllers
       _db = db;
     }
 
-    public ActionResult Index() //Index to cuisine view
+    public ActionResult Index()
     {
       List<Stylist> model = _db.Stylists //creates list of stylists thats equal to the database results of stylists
                            .Include(stylist => stylist.clients)  //includes
