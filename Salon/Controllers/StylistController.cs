@@ -9,11 +9,11 @@ namespace Salon.Controllers
 {
   public class StylistController : Controller
   {
-    private readonly SalonContext _db;
+    // private readonly SalonContext _db;
 
-    public StylistController(SalonContext db)
-    {
-      _db = db;
-    }
+    // public StylistController(SalonContext db)
+    // {
+    //   _db = db;
+    // }
   }
 }
