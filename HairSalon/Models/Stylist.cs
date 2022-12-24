@@ -1,11 +1,10 @@
-using System;
-
 namespace Salon.Models
 {
   public class Stylist
   {
-    public int stylist_id { get; set; }
-    public string stylist_name { get; set; }
-    public Client clients { get; set; }
+    public int StylistId { get; set; }
+    public string Name { get; set; }
+    public int ClientId { get; set; }
+    public Client Client { get; set; }
   }
 }
