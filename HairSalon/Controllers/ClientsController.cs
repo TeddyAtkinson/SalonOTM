@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Salon.Models;
+using System.Linq;
+using System.Collections.Generic;
 
 
 namespace HairSalon.Controllers

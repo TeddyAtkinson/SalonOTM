@@ -40,7 +40,7 @@ namespace Salon.Controllers
       return View(thisStylist);
     }
 
-    [HttpPost, ActionName("Delete")]
+    [HttpPost]
     public ActionResult DeleteConfirmed(int id)
     {
       Stylist thisStylist = _db.Stylists.FirstOrDefault(category => category.StylistId == id);
