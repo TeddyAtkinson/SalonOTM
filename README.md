@@ -43,7 +43,7 @@ Simple one to many database relationship using mySQL displayed in a MVC applicat
 
 ## Known Bugs
 
-* None
+* Client Details page doesn't display stylist
 
 ## License
 Copyright (c) 2022 Teddy Atkinson
