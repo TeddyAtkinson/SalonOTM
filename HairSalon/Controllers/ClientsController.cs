@@ -36,11 +36,17 @@ namespace HairSalon.Controllers
     {
       if (client.StylistId == 0)
       {
-        return RedirectToAction("Create", "Stylists");
+        return RedirectToAction("Create");
       }
       _db.Clients.Add(client);
       _db.SaveChanges();
       return RedirectToAction("Index");
+    }
+
+    public ActionResult Details(int id)
+    {
+      Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
+      return View(thisClient);
     }
 
     public ActionResult Delete(int id)
