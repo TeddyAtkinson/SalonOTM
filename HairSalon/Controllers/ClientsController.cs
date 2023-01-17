@@ -55,7 +55,7 @@ namespace HairSalon.Controllers
       return View(thisClient);
     }
 
-    [HttpPost]
+    [HttpPost, ActionName("Delete")]
     public ActionResult DeleteConfirmed(int id)
     {
       Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
